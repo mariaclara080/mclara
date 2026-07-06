@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portfólio Tinkercad</title>
+    <style>
+        :root {
+            --primary: #2c3e50;
+            --accent: #e67e22;
+            --bg: #f8f9fa;
+            --card-bg: #ffffff;
+            --text: #333333;
+        }
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+            padding: 0 0 40px 0;
+        }
+        header {
+            background: linear-gradient(135deg, var(--primary), #34495e);
+            color: white;
+            text-align: center;
+            padding: 60px 20px;
+            margin-bottom: 40px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        .galeria {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        .card {
+            background: var(--card-bg);
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            display: flex;
+            flex-direction: column;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+        }
+        .card-img-container {
+            width: 100%;
+            height: 200px;
+            background-color: #eaeaea;
+            position: relative;
+            overflow: hidden;
+        }
+        .card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .card-content {
+            padding: 20px;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .card h3 {
+            font-size: 1.3rem;
+            margin-bottom: 10px;
+            color: var(--primary);
+        }
+        .card p {
+            font-size: 0.95rem;
+            color: #666;
+            margin-bottom: 20px;
+        }
+        .badge {
+            display: inline-block;
+            background: #e1f5fe;
+            color: #0288d1;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+            align-self: flex-start;
+        }
+        .badge.eletronica {
+            background: #ffe0b2;
+            color: #f57c00;
+        }
+        .btn {
+            display: block;
+            background: var(--accent);
+            color: white;
+            text-align: center;
+            padding: 10px 15px;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: bold;
+            transition: background 0.2s ease;
+        }
+        .btn:hover {
+            background: #d35400;
+        }
+        footer {
+            margin-top: 60px;
+            text-align: center;
+            color: #888;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Meu Portfólio Tinkercad</h1>
+        <p>Explore as minhas criações em 3D, circuitos e projetos com Arduino</p>
+    </header>
+
+    <div class="container">
+        <main class="galeria">
+            
+            <!-- PROJETO 1 -->
+            <div class="card">
+                <div class="card-img-container">
+                    <img src="https://images.unsplash.com/photo-1608564697171-252559d5743c?auto=format&fit=crop&w=500&q=80" alt="Pisca-Pisca com Arduino">
+                </div>
+                <div class="card-content">
+                    <div>
+                        <span class="badge eletronica">Eletrónica / Arduino</span>
+                        <h3>Pisca-Pisca (Blink)</h3>
+                        <p>Um circuito simples utilizando o Arduino Uno para programar o piscar de um LED a cada segundo.</p>
+                    </div>
+                    <a href="COLOQUE_AQUI_O_LINK_DO_TINKERCAD_1" target="_blank" class="btn">Ver no Tinkercad</a>
+                </div>
+            </div>
+
+            <!-- PROJETO 2 -->
+            <div class="card">
+                <div class="card-img-container">
+                    <img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=500&q=80" alt="Sensor de Estacionamento">
+                </div>
+                <div class="card-content">
+                    <div>
+                        <span class="badge eletronica">Circuitos / Sensores</span>
+                        <h3>Sensor de Estacionamento</h3>
+                        <p>Circuito interativo utilizando um sensor de ultrassons (HC-SR04) e um Buzzer para simular o alerta de proximidade.</p>
+                    </div>
+                    <a href="COLOQUE_AQUI_O_LINK_DO_TINKERCAD_2" target="_blank" class="btn">Ver no Tinkercad</a>
+                </div>
+            </div>
+
+            <!-- PROJETO 3 -->
+            <div class="card">
+                <div class="card-img-container">
+                    <img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=500&q=80" alt="Design 3D">
+                </div>
+                <div class="card-content">
+                    <div>
+                        <span class="badge">Design 3D</span>
+                        <h3>Chassis de Robô</h3>
+                        <p>Modelo tridimensional de um chassis para robô seguidor de linha, projetado sob medida para encaixe de componentes.</p>
+                    </div>
+                    <a href="COLOQUE_AQUI_O_LINK_DO_TINKERCAD_3" target="_blank" class="btn">Ver no Tinkercad</a>
+                </div>
+            </div>
+
+        </main>
+
+        <footer>
+            <p>&copy; Criado por Mim | Projetos hospedados publicamente no Tinkercad</p>
+        </footer>
+    </div>
+
+</body>
+</html>
